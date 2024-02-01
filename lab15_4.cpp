@@ -17,3 +17,16 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a,int &b,int &c,int &d){
+	int dangsenseipay[] = {a, b, c, d};
+    int n = 4;
+    for (int i = n - 1; i > 0; i--) {
+        int j = rand() % (i + 1);
+        swap(dangsenseipay[i], dangsenseipay[j]);
+    }
+    a = dangsenseipay[0];
+    b = dangsenseipay[1];
+    c = dangsenseipay[2];
+    d = dangsenseipay[3];
+}
